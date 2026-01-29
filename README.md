@@ -1,0 +1,54 @@
+# Stock Price Checker
+
+## Description
+
+A simple [Nest](https://github.com/nestjs/nest) application that provides a way to check stock prices and calculates the moving average of recent price records.
+
+## Project setup
+
+Install dependencies:
+
+```bash
+$ npm install
+```
+
+Spin up a local PostgreSQL database:
+
+```bash
+$ docker-compose up
+```
+
+Init the database:
+
+```bash
+$ npx prisma db push
+```
+
+Create a file named `.env` and fill in the environment variables based on [`.env.example`](.env.example).
+
+## Compile and run the project
+
+```bash
+# development
+$ npm run start
+
+# watch mode
+$ npm run start:dev
+
+# production mode
+$ npm run start:prod
+```
+
+## API docs
+
+A Swagger UI is available at [`localhost:3000/api`](http://localhost:3000/api).
+
+## Run tests
+
+```bash
+# unit tests
+$ npm run test
+
+# test coverage
+$ npm run test:cov
+```
