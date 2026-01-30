@@ -57,6 +57,8 @@ A Swagger UI is available at [`localhost:3000/api`](http://localhost:3000/api).
 
 ## Run tests
 
+In order to run the tests, make sure you have a running local database (see the [Start a database](#start-a-database) section above).
+
 ```bash
 # unit tests
 $ npm run test
