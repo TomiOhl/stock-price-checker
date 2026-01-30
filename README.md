@@ -4,7 +4,7 @@
 
 A simple [Nest](https://github.com/nestjs/nest) application that provides a way to check stock prices and calculates the moving average of recent price records.
 
-## Project setup
+### Project setup
 
 Install dependencies:
 
@@ -12,10 +12,24 @@ Install dependencies:
 $ npm install
 ```
 
+Create a file named `.env` and fill in the environment variables based on [`.env.example`](.env.example).
+
+## Run everything in Docker
+
+Run this command to start the database and the app:
+
+```bash
+$ docker compose up --build
+```
+
+## Run the app locally
+
+### Start a database
+
 Spin up a local PostgreSQL database:
 
 ```bash
-$ docker-compose up
+$ docker compose -f docker-compose-local.yml up
 ```
 
 Init the database:
@@ -24,9 +38,7 @@ Init the database:
 $ npx prisma db push
 ```
 
-Create a file named `.env` and fill in the environment variables based on [`.env.example`](.env.example).
-
-## Compile and run the project
+### Compile and run the project
 
 ```bash
 # development
