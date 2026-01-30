@@ -7,7 +7,7 @@ import {
   Param,
   Put,
 } from '@nestjs/common';
-import { StockPrice } from '@prisma/client';
+import { StockPrice } from '../generated/prisma/client';
 import { SymbolParamDto } from './dto/symbol-param.dto';
 import { StocksService } from './stocks.service';
 import { StocksResponse } from './stocks.types';

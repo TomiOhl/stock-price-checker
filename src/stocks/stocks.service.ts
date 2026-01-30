@@ -1,8 +1,8 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
-import type { StockPrice } from '@prisma/client';
-import { calculateMovingAverage } from '../utils/avg.util';
 import { config } from '../config';
+import type { StockPrice } from '../generated/prisma/client';
 import { PrismaService } from '../prisma/prisma.service';
+import { calculateMovingAverage } from '../utils/avg.util';
 import { fetchStockQuote } from '../utils/quote.util';
 import { StocksResponse } from './stocks.types';
 
